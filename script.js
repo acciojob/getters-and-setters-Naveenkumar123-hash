@@ -31,7 +31,7 @@ class Student extends Person {
 
 class Teacher extends Person {
 	teach(){
-		console.log(`${this.name} is teaching.`);
+		console.log(`${this.name} is teaching`);
 	}
 }
 const person = new Person("John", 25);
@@ -39,10 +39,10 @@ person.age = 30;
 console.log(person.age);  
 
 const student = new Student("John", 30);
-student.study();  // Output: Alice is studying.
+student.study();  
 
 const teacher = new Teacher("Alice", 30);
-teacher.teach();  // Output: Bob is teaching.
+teacher.teach();  
 
 // Do not change the code below this line
 window.Person = Person;
